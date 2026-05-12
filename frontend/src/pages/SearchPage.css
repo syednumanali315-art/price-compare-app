@@ -1,0 +1,118 @@
+.results-section {
+  padding-bottom: 60px;
+}
+
+.results-header {
+  margin-bottom: 28px;
+}
+
+.results-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.query-highlight { color: var(--accent); }
+
+.results-meta {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.skeleton-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.error-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.3);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  font-size: 15px;
+  color: var(--danger);
+}
+
+.error-box span { font-size: 24px; }
+
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-secondary);
+}
+
+.no-results-icon { font-size: 64px; display: block; margin-bottom: 16px; }
+.no-results h3 { font-size: 20px; margin-bottom: 8px; }
+.no-results p { color: var(--text-muted); }
+
+/* ─── Empty State ─────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px 80px;
+}
+
+.platform-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.pi {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.pi.amazon { background: rgba(255,153,0,0.15); color: var(--amazon); border: 2px solid rgba(255,153,0,0.3); }
+.pi.flipkart { background: rgba(40,116,240,0.15); color: var(--flipkart); border: 2px solid rgba(40,116,240,0.3); }
+.pi.myntra { background: rgba(255,63,108,0.15); color: var(--myntra); border: 2px solid rgba(255,63,108,0.3); }
+
+.empty-state h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.empty-state > p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.feature {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
